@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        h2 {
+            letter-spacing: 3px;
+        }
+
+        .bg-img {
+            background-image: url(https://i.pinimg.com/1200x/3a/06/94/3a0694ed94296bfc5da8939622766a40.jpg);
+            background-size: cover;
+            height: 90vh;
+
+        }
+
+        .text {
+            color: grey;
+        }
+
+        .btn-1 {
+            background-color: rgb(238, 165, 30);
+            border: none;
+            border-radius: 10px;
+            width: 140px;
+            font-size: large;
+            color: white;
+        }
+
+        .btn-1:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .btn-2 {
+            background-color: rgb(238, 165, 30);
+            border: none;
+            border-radius: 10px;
+            width: 140px;
+            font-size: large;
+        }
+
+        .btn-2:hover {
+            background-color: black;
+            color: white;
+        }
+
+        nav {
+            background-color: black;
+        }
+
+        .bg {
+            background-color: black;
+            height: 100vh;
+        }
+
+        .bg-1 {
+            background-color: black;
+        }
+
+        .text {
+            color: grey;
+        }
+
+        .card {
+            background-color: black;
+            color: white;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgb(19, 17, 17);
+        }
+
+        .card:hover {
+            background-color: white;
+            color: black;
+        }
+        
+
+        ul li a:hover {
+
+            border-bottom: 1px solid rgb(238, 165, 30);
+            
+
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card-1 {
+            border: 2px solid rgb(19, 17, 17);
+            
+        }
+
+        .btn-sm {
+            border: 1px solid rgb(19, 17, 17);
+
+        }
+
+        .btn-sm:hover {
+            background-color: rgb(235, 160, 28);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!----------------Navbar-->
+    <nav class="navbar navbar-expand-sm sticky-top  justify-content-center ">
+        <div class="container-fluid   ">
+            <a href="#home">
+                <img class="rounded-circle" style="height: 70px; width:70px;"
+                    src="https://cdn4.vectorstock.com/i/1000x1000/57/18/coffee-cup-logo-on-black-design-background-vector-35595718.jpg"></a>
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5  " href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#review">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-5 " href="#Blogs">Blog</a>
+                </li>
+            </ul>
+
+            <div class="fa-solid fa-magnifying-glass" id="menu_btn" onclick="openmenu()"></div>
+            <div class="fa-solid fa-cart-shopping" id="close" onclick="closemenu()"></div>
+
+
+        </div>
+
+    </nav>
+
+    <!----------------------------Home section-->
+
+
+    <div id="home">
+        <div class="container-fluid  mt-0 bg-img ">
+
+            <h2 class="site-title display-4 pt-5 fw-bold ms-5  text-white">FRESH <span
+                    style="color:rgb(238, 165, 30);">COFFEE</span> IN <br> THE MORNING</h2>
+            <p class="sub-title text fs-4  ms-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Ducimus,
+                placeat! Rem iure commodi !</p>
+            <button class="btn-1  p-2 mt-1 mb-5 ms-5">Get it Now</button>
+        </div>
+        <!--------------------------Home Section End-->
+
+        <!-----------------------About section-->
+
+        <div id="about">
+
+
+            <div class="container-fluid bg  ">
+                <h2 class="text-center text-white display-5 pt-5 fw-bold">ABOUT <span
+                        style="color:rgb(238, 165, 30);">US</span></h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <img class="w-100"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE45tmfPHI3MMLswuUG4ya6UPrp5-yGl8gy1BSPokwrWfanW8hXjA7yCksIx0uTQx0Nwg&usqp=CAU"
+                                alt="">
+
+                        </div>
+
+
+                        <div class="col-md-6">
+
+                            <h3 class="text-white pt-5">What Makes Our Coffee Special?</h3>
+                            <p class="text pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum quam
+                                repellat maiores voluptates quas reiciendis voluptate nesciunt, sint accusantium eum
+                                corrupti adipisci delectus ad veritatis.</p>
+                            <p class="text pt-2 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Architecto
+                                excepturi omnis porro quidem explicabo maxime?</p>
+                            <button class="btn-1   p-2 mt-1 mb-5 "> Learn More</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------About section end-->
+
+    <!--------------------menu section-->
+    <div id="menu">
+
+        <div class="container-fluid bg-1  ">
+            <h2 class="text-center text-white display-5 pt-4 mb-3 fw-bold">OUR <span
+                    style="color:rgb(238, 165, 30);">MENU</span> </h2>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://www.adityabirlacapital.com/healthinsurance/active-together/wp-content/uploads/2019/12/How-Are-Espressos-Good-For-Health_blog_lower_1-1200x1200.png"
+                                    alt="">
+                                <h3 class=" text-center mt-3 mb-0">Espresso</h3>
+                                <p class="text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://ministryofcurry.com/wp-content/uploads/2022/06/Pistachio-latte-10.jpg"
+                                    alt="">
+                                <h3 class=" text-center mt-3 mb-0">Latte</h3>
+                                <p class="text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                                    alt="">
+                                <h3 class=" text-center mt-3 mb-0">Cappuccino</h3>
+                                <p class=" text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://fedandfit.com/wp-content/uploads/2022/02/230322_how-to-make-cold-brew-38-500x500.jpg"
+                                    alt="">
+                                <h3 class=" text-center mt-3 mb-0">Cold Brew</h3>
+                                <p class=" text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://www.windingcreekranch.org/wp-content/uploads/2022/05/Homemade-iced-coffee-1200-1200-500x500.jpg"
+                                    alt="">
+                                <h3 class=" text-center mt-3 mb-0">Iced Coffee</h3>
+                                <p class=" text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mt-4 mb-4">
+                            <div class="card-body ">
+                                <img class="rounded-circle w-25 d-block m-auto"
+                                    src="https://purpleboat.in/wp-content/uploads/2020/09/cafe-americano.jpeg" alt="">
+                                <h3 class=" text-center mt-3 mb-0">Americano</h3>
+                                <p class="text-center"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+                                <button class="btn-2  d-block m-auto text-white  p-2 mt-1 mb-2">Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--------------------menu section end-->
+
+    <!----------------------------products section---->
+
+    <div id="products">
+        <div class="container-fluid bg-1 mb-3 mt-0">
+            <h2 class="text-center text-white display-5 pt-4 mb-3 fw-bold">LATEST <span
+                    style="color:rgb(238, 165, 30);">PRODUCTS</span> </h2>
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card-1 mb-3 mt-3">
+                            <div class="card-body  ">
+                                <div class="icons mb-4 mt-3 ">
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-shopping-cart me-2  "></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-heart me-2"></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"> <i
+                                            style="font-size: 1.2rem ;color:white; "
+                                            class="fa-solid fa-eye"></i></button>
+                                </div>
+                                <img class="d-block m-auto"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ERFtpwC8a75_Mw7N7A2VL2X60mLqW84NWA&usqp=CAU"
+                                    alt="loading...">
+                                <h3 class="text-center text-white mt-3 mb-0">Fresh Coffee</h3>
+                                <img src="" alt="">
+                                <div class="icons mb-3">
+                                    <i class="fa-solid fa-star " style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: rgb(238, 165, 30);"></i>
+                                </div>
+
+                                <p class="text-center text-white"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <div class="card-1 mb-3 mt-3">
+                            <div class="card-body  ">
+                                <div class="icons mb-4 mt-3 ">
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-shopping-cart me-2  "></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-heart me-2"></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"> <i
+                                            style="font-size: 1.2rem ;color:white; "
+                                            class="fa-solid fa-eye"></i></button>
+                                </div>
+                                <img class="d-block m-auto"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ERFtpwC8a75_Mw7N7A2VL2X60mLqW84NWA&usqp=CAU"
+                                    alt="loading...">
+                                <h3 class="text-center text-white mt-3 mb-0">Fresh Coffee</h3>
+                                <img src="" alt="">
+                                <div class="icons mb-3">
+                                    <i class="fa-solid fa-star " style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: rgb(238, 165, 30);"></i>
+                                </div>
+
+                                <p class="text-center text-white"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-1 mb-3 mt-3">
+                            <div class="card-body  ">
+                                <div class="icons mb-4 mt-3 ">
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-shopping-cart me-2  "></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"><i
+                                            style="font-size: 1.2rem ;color:white;"
+                                            class="fa-solid fa-heart me-2"></i></button>
+                                    <button class="btn btn-outline-secondary p-2 m-1 btn-sm"> <i
+                                            style="font-size: 1.2rem ;color:white; "
+                                            class="fa-solid fa-eye"></i></button>
+                                </div>
+                                <img class="d-block m-auto"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ERFtpwC8a75_Mw7N7A2VL2X60mLqW84NWA&usqp=CAU"
+                                    alt="loading...">
+                                <h3 class="text-center text-white mt-3 mb-0">Fresh Coffee</h3>
+                                <img src="" alt="">
+                                <div class="icons mb-3">
+                                    <i class="fa-solid fa-star " style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(238, 165, 30);"></i>
+                                    <i class="fa-solid fa-star-half-stroke" style="color: rgb(238, 165, 30);"></i>
+                                </div>
+
+                                <p class="text-center text-white"><strong class="fs-5">$15.99</strong><del
+                                        class="ms-2">$10.99</del></p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!----------------------products section end-->
+
+            <!------------------REview section------>
+
+            <div id="review">
+                
+            </div>
+
+              <!------------------REview section end------>
+
+
+
+
+
+</body>
+
+</html>
